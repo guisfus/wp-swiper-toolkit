@@ -20,13 +20,48 @@ This plugin is intentionally simple. It does not add admin screens, Gutenberg bl
 
 ## Installation
 
-1. Download or clone this repository into your WordPress plugins directory:
+The GitHub repository uses the `wp-` prefix only to identify it as a WordPress plugin repository. When installing the plugin in WordPress, use the plugin folder name without the `wp-` prefix.
+
+Correct plugin folder:
+
+```txt
+wp-content/plugins/swiper-toolkit/
+```
+
+Correct ZIP structure:
+
+```txt
+swiper-toolkit.zip
+`-- swiper-toolkit/
+    |-- swiper-toolkit.php
+    |-- assets/
+    |-- README.md
+    `-- LICENSE
+```
+
+Do not install it as:
+
+```txt
+wp-content/plugins/wp-swiper-toolkit/
+```
+
+Backend installation:
+
+1. Create a ZIP with `swiper-toolkit/` as the root folder.
+2. In WordPress, go to **Plugins > Add New > Upload Plugin**.
+3. Upload `swiper-toolkit.zip`.
+4. Activate **Swiper Toolkit**.
+
+Manual installation:
+
+1. Upload the `swiper-toolkit` folder to `wp-content/plugins/`.
+2. Activate **Swiper Toolkit** from the WordPress plugins screen.
+
+Git installation:
 
 ```bash
 git clone git@github.com:guisfus/wp-swiper-toolkit.git wp-content/plugins/swiper-toolkit
 ```
-
-2. Activate **Swiper Toolkit** from the WordPress admin plugins screen.
 
 ## Usage
 
