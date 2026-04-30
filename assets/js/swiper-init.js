@@ -1,12 +1,18 @@
 (function () {
   'use strict';
 
-  const initUnderbannerSliders = () => {
+  const initUnderbannerSliders = (root = document) => {
     if (typeof window.Swiper === 'undefined') {
       return;
     }
 
-    document.querySelectorAll('.swiper-underbanner').forEach((el) => {
+    root = root || document;
+
+    const sliders = root.matches && root.matches('.swiper-underbanner')
+      ? [root]
+      : Array.from(root.querySelectorAll('.swiper-underbanner'));
+
+    sliders.forEach((el) => {
       if (el.dataset.swiperToolkitInitialized === 'true') {
         return;
       }
@@ -38,5 +44,7 @@
     });
   };
 
-  document.addEventListener('DOMContentLoaded', initUnderbannerSliders);
+  window.SwiperToolkitInit = initUnderbannerSliders;
+
+  document.addEventListener('DOMContentLoaded', () => initUnderbannerSliders());
 })();

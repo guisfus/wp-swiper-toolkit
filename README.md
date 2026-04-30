@@ -52,6 +52,18 @@ assets/js/swiper-init.js
 
 The plugin currently includes an example initializer for `.swiper-underbanner`.
 
+If markup is injected after page load by AJAX, a popup, or a page builder, call:
+
+```js
+window.SwiperToolkitInit();
+```
+
+You can also pass a specific container element:
+
+```js
+window.SwiperToolkitInit(document.querySelector('.dynamic-section'));
+```
+
 ## Styling
 
 The plugin loads Swiper's base CSS. Project-specific styles should usually live in your active theme or child theme.
@@ -74,6 +86,13 @@ For example:
 ## Security
 
 This plugin does not process user input, create admin forms, expose AJAX actions, register REST routes, or store data. The PHP entry point prevents direct access and only enqueues local frontend assets.
+
+## Frontend Footprint
+
+- Loads Swiper's local CSS and JS bundle.
+- Loads `assets/js/swiper-init.js` for project-specific initializers.
+- Exposes `window.SwiperToolkitInit` so dynamic content can be initialized manually.
+- Marks initialized sliders with `data-swiper-toolkit-initialized="true"` to avoid duplicate Swiper instances.
 
 ## Third-Party Assets
 
