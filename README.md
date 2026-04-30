@@ -135,4 +135,4 @@ This plugin includes Swiper 12.1.4, released under the MIT License.
 
 ## License
 
-Swiper Toolkit is licensed under GPL-2.0-or-later.
+Swiper Toolkit is licensed under GPL-2.0-or-later. See the `LICENSE` file for details.
