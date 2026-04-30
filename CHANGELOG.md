@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Add a custom update URI to prevent WordPress.org from offering updates for a different plugin.
+
 ## 1.0.0
 
 - Initial release.
