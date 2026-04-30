@@ -7,7 +7,7 @@
     }
 
     document.querySelectorAll('.swiper-underbanner').forEach((el) => {
-      if (el.dataset.guisfusSwiperInitialized === 'true') {
+      if (el.dataset.swiperToolkitInitialized === 'true') {
         return;
       }
 
@@ -34,7 +34,7 @@
         },
       });
 
-      el.dataset.guisfusSwiperInitialized = 'true';
+      el.dataset.swiperToolkitInitialized = 'true';
     });
   };
 

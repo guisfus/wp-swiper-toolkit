@@ -1,4 +1,4 @@
-# Guisfus Swiper Toolkit
+# Swiper Toolkit
 
 A lightweight developer-focused WordPress plugin for loading [Swiper](https://swiperjs.com/) and managing custom slider initializations from a single JavaScript file.
 
@@ -23,10 +23,10 @@ This plugin is intentionally simple. It does not add admin screens, Gutenberg bl
 1. Download or clone this repository into your WordPress plugins directory:
 
 ```bash
-git clone git@github.com:guisfus/guisfus-swiper-toolkit.git wp-content/plugins/guisfus-swiper-toolkit
+git clone git@github.com:guisfus/wp-swiper-toolkit.git wp-content/plugins/swiper-toolkit
 ```
 
-2. Activate **Guisfus Swiper Toolkit** from the WordPress admin plugins screen.
+2. Activate **Swiper Toolkit** from the WordPress admin plugins screen.
 
 ## Usage
 
@@ -81,4 +81,4 @@ This plugin includes Swiper 12.1.4, released under the MIT License.
 
 ## License
 
-Guisfus Swiper Toolkit is licensed under GPL-2.0-or-later.
+Swiper Toolkit is licensed under GPL-2.0-or-later.
